@@ -17,13 +17,13 @@
     background-position: center; 
     background-size: contain;
     background-repeat: no-repeat;
-    animation: fly 5s infinite alternate linear;
+    animation: fly 1s infinite linear;
 }
 
 @keyframes fly {
     0% { left: 10px; top: 10px}
-    25% { left: 100px; top: 100px}
-    50% { left: 200px; top: 200px}
-    75% { left: 300px; top: 300px}
-    100% {left: 400px; top: 400px;}
+    25% { left: 400px; top: 10px}
+    50% { left: 400px; top: 400px}
+    75% { left: 10px; top: 400px}
+    100% {left: 10px; top: 10px;}
 }

@@ -1,10 +1,10 @@
 #brett {
     width: 500px;
     height: 500px;
-    border: solid black 5px;
+    border: solid rgb(60, 255, 0) 5px;
     position: absolute;
-    left: 50px;
-    top: 20px;
+    left: 150px;
+    top: 150px;
 }
 
 #fuggel {
@@ -17,7 +17,7 @@
     background-position: center; 
     background-size: contain;
     background-repeat: no-repeat;
-    animation: fly 1s infinite linear;
+    animation: fly 3s infinite linear;
 }
 
 @keyframes fly {

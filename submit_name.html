@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Submit_name</title>
+    <style>
+            body {
+                background-color: gray;
+            }
+     .topnav {
+        background-color: rgb(41, 40, 40);
+        overflow: hidden;
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .topnav a:hover {
+        background-color: blue
+    
+    }
+    
+    .topnav a:active {
+        background-color: blue;
+        color: blue;
+    }   
+        </style>
+</head>
+<body>
+        <div class="topnav">
+                <a class="active" href="LokeSvelland.html">Home</a>
+                <a href="lightbulb.html">Light bulb</a>
+                <a href="plan.html">Læreplan IT1</a>
+                <a href="submit_name.html">Submit name</a>
+                <a href="spacepig.html">Space Pig</a>
+                <a href="liste.html">Film liste</a>
+        </div>
+    
+            <p>vennligst skriv inn navn.</p>
+
+            <form id="frml" action="/action_page.php">
+            Fornavn: <input type="text" name="fnavn"> <br>
+            Etternavn: <input type="text" name="Enavn"> <br><br>
+            <input type="button" onclick="myFunction()" value="submit">
+            </form>
+
+            <script>
+            function myFunction() {
+                document.getElementById("frml").submit();
+            }
+            </script>
+
+    
+</body>
+</html>

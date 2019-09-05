@@ -55,17 +55,27 @@ footer {
 
 #person {
     position: absolute;
+    opacity: 1.0;
     bottom: 40px;
     left: -60px;
     height: 120px;
     width: 30px;
     border-radius: 7px;
-    animation: slide 80s infinite;
+    animation: slide 4s linear forwards;
 }
 
 @keyframes slide {
+    0% {
+        left: -60px;
+        opacity: 1.0;
+    }
+    99% {
+        left: 65vw;
+        opacity: 0.99
+    }
     100% {
-        left: 110vw;
+        left: 67vw;
+        opacity: 0;
     }
 }
 
@@ -78,7 +88,7 @@ footer {
     background-image: url("puppet.png");
     background-position-x: 0;
     background-position-y: calc(-112px * 2);
-    animation: walk 1.5s steps(8) infinite;
+    animation: walk 1s steps(8) infinite;
 }
 
 @keyframes walk {
@@ -100,6 +110,7 @@ footer {
 
 #skelet {
     position: absolute;
+    opacity: 1;
     left: 950px;
     bottom: 10px;
     width: 120px;
@@ -110,4 +121,17 @@ footer {
     background-size: 50%;
     background-repeat: no-repeat;
     transform: rotate(90deg);
+    animation: popup 4s;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

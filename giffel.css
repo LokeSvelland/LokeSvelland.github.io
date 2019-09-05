@@ -1,3 +1,7 @@
+:root {
+    --walktime: 30s;
+}
+
 body {
     background-color: rgb(63, 50, 50)
 }
@@ -61,7 +65,7 @@ footer {
     height: 120px;
     width: 30px;
     border-radius: 7px;
-    animation: slide 4s linear forwards;
+    animation: slide var(--walktime) linear forwards;
 }
 
 @keyframes slide {
@@ -121,7 +125,7 @@ footer {
     background-size: 50%;
     background-repeat: no-repeat;
     transform: rotate(90deg);
-    animation: popup 4s;
+    animation: popup var(--walktime);
 }
 
 @keyframes popup {

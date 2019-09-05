@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(63, 50, 50)
+}
+
+header h1 {
+    color: blue;
+    text-align: center;
+}
+
+main {
+    height: 70vh;
+}
+
+header {
+    height: 10vh;
+}
+
+footer {
+    height: 10vh;
+}
+
+#verden {
+    height: 70vh;
+}
+
+#himmel {
+    position: relative;
+    height: 80%;
+    background-color: rgb(2, 209, 209);
+}
+
+#jord {
+    position: relative;
+    height: 20%;
+    background-color: burlywood;
+}
+
+#sol {
+    position: absolute;
+    top: 90px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: flimmer 1s infinite alternate;
+}
+
+@keyframes flimmer {
+    100% {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+#person {
+    position: absolute;
+    bottom: 40px;
+    left: -60px;
+    height: 120px;
+    width: 30px;
+    border-radius: 7px;
+    animation: slide 100s infinite;
+}
+
+@keyframes slide {
+    100% {
+        left: 110vw;
+    }
+}
+
+#person2 {
+    position: absolute;
+    left: calc(50% - 56px);
+    top: 30px;
+    width: 112px;
+    height: 112px;
+    background-image: url("puppet.png");
+    background-position-x: 0;
+    background-position-y: calc(-112px * 2);
+    animation: walk 1.5s steps(8) infinite;
+}
+
+@keyframes walk {
+    100% {
+        background-position-x: calc( -112px * 8);
+    }
+}
+
+#kaktus {
+    position: absolute;
+    left: 350px;
+    bottom: 0px;
+    width: 300px;
+    height: 300px;
+    background-image: url(deadtree2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#skelet {
+    position: absolute;
+    left: 950px;
+    bottom: -50px;
+    width: 200px;
+    height: 200px;
+    background-image: url(skjelett.png);
+    background-position: center;
+    background-size: cover;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}

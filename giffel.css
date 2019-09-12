@@ -1,5 +1,5 @@
 :root {
-    --walktime: 30s;
+    --walktime: 4s;
 }
 
 body {
@@ -110,6 +110,70 @@ footer {
     background-image: url(deadtree2.png);
     background-position: center;
     background-size: cover;
+}
+
+#arrow {
+    position: absolute;
+    left: 65vw;
+    bottom: 70px;
+    width: 80px;
+    height: 80px;
+    background-image: url(arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: rotate(-45deg);
+    animation: fly 4s linear, fadeout 4s;
+}
+
+@keyframes fly {
+    0% {
+        left: 110vw;
+    }
+    70% {
+        left: 110vw;
+    }
+    90% {
+        left: 110vw;
+    }
+    95% {
+        left: 110vw;
+    }
+    100% {
+        left: 67vw;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    99% {
+        opacity: .99;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#arrowiperson {
+    position: absolute;
+    opacity: 1;
+    left: 1025px;
+    bottom: 23px;
+    width: 40px;
+    height: 40px;
+    background-image: url(arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(45deg);
+    animation: popup var(--walktime);
 }
 
 #skelet {

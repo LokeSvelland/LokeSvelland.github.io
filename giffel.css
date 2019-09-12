@@ -1,5 +1,5 @@
 :root {
-    --walktime: 4s;
+    --walktime: 10s;
 }
 
 body {
@@ -74,8 +74,8 @@ footer {
         opacity: 1.0;
     }
     99% {
-        left: 65vw;
-        opacity: 0.99
+        left: 67vw;
+        opacity: 1.0
     }
     100% {
         left: 67vw;
@@ -124,7 +124,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
     transform: rotate(-45deg);
-    animation: fly 4s linear, fadeout 4s;
+    animation: fly 10s linear, fadeout 10s forwards;
 }
 
 @keyframes fly {
@@ -152,8 +152,8 @@ footer {
     50% {
         opacity: 1.0;
     }
-    99% {
-        opacity: .99;
+    98% {
+        opacity: 1.0;
     }
     100% {
         opacity: 0;

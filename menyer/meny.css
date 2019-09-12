@@ -39,6 +39,10 @@ header {
     color: white;
 }
 
+thead {
+    background-color: aqua;
+}
+
 article {
     min-height: 90vh;
     border: solid green 1px;

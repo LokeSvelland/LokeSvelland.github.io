@@ -1,5 +1,5 @@
 :root {
-    --walktime: 10s;
+    --walktime: 40s;
 }
 
 body {
@@ -124,7 +124,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
     transform: rotate(-45deg);
-    animation: fly 10s linear, fadeout 10s forwards;
+    animation: fly 40s linear, fadeout 40s forwards;
 }
 
 @keyframes fly {
@@ -137,11 +137,11 @@ footer {
     90% {
         left: 110vw;
     }
-    95% {
+    97% {
         left: 110vw;
     }
     100% {
-        left: 67vw;
+        left: 60vw;
     }
 }
 
@@ -152,7 +152,7 @@ footer {
     50% {
         opacity: 1.0;
     }
-    98% {
+    99% {
         opacity: 1.0;
     }
     100% {
@@ -165,8 +165,8 @@ footer {
     opacity: 1;
     left: 1025px;
     bottom: 23px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background-image: url(arrow.png);
     background-position: center;
     background-size: contain;

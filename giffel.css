@@ -1,5 +1,5 @@
 :root {
-    --walktime: 40s;
+    --walktime: 10s;
 }
 
 body {
@@ -115,7 +115,7 @@ footer {
 #arrow {
     position: absolute;
     left: 65vw;
-    bottom: 70px;
+    bottom: 20px;
     width: 80px;
     height: 80px;
     background-image: url(arrow.png);
@@ -124,7 +124,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
     transform: rotate(-45deg);
-    animation: fly 40s linear, fadeout 40s forwards;
+    animation: fly 10s linear, fadeout 10s forwards;
 }
 
 @keyframes fly {
@@ -163,10 +163,10 @@ footer {
 #arrowiperson {
     position: absolute;
     opacity: 1;
-    left: 1025px;
-    bottom: 23px;
-    width: 60px;
-    height: 60px;
+    left: 960px;
+    bottom: 18px;
+    width: 50px;
+    height: 50px;
     background-image: url(arrow.png);
     background-position: center;
     background-size: contain;

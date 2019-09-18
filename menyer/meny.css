@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background-color: rgb(70, 70, 70);
+    color: white;
 }
 
 header {
@@ -63,4 +64,26 @@ table {
 
 tbody>tr:nth-child(odd) {
     background-color: lightgreen;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#grid>div {
+    border: solid green 1px;
+}
+
+#grid>div>img {
+    width: 9em;
+    filter: saturate(0%);
+    background-size: cover;
+    transition: 1s;
+}
+
+#grid>div>img:hover {
+    filter: saturate(100%);
+    min-width: 500px;
+    background-size: contain;
 }

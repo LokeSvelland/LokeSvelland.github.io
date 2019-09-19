@@ -1,0 +1,25 @@
+body {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+    padding: 2px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#grid>div {
+    border: solid green 1px;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+}
+
+#grid>div>a {
+    color: white;
+    padding: 12px 12px;
+}

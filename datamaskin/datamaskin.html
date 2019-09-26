@@ -10,8 +10,22 @@
 </head>
 
 <body>
+    <script>
+        function hide(e) {
+            let t = document.getElementById("hide");
+            t.style.position = "relative";
+            let left = +(t.style.left.replace("px", "")) + 20;
+            t.style.left = left + "px";
+        }
+
+        function helpme() {
+            // alert("HELP ME");
+            document.location.href = "https://vg.no";
+        }
+    </script>
     <header>
         <h1>Datamaskinens oppbyggning og virkemåter</h1>
+        <button id="hide" onclick="helpme()" onmouseover="hide()">Helpme</button>
 
     </header>
     <main>
@@ -38,7 +52,7 @@
                 <p>
                     Standard lagringsmedia i dag er SSD. tidligere (for få år siden) var HDD det mest brukte.
                     <br> SSD (Solid State Drive) er raskere til å hente fram lagret data enn hva HDD (Hard Disk Drive) er.
-                    <br> En HDD leser av en palte hvor den lagrer all daten på og må Spinne seg frem til det punktet hvor den har lagret den informasjonen du er ute etter.
+                    <br> En HDD leser av en plate hvor den lagrer all daten på og må Spinne seg frem til det punktet hvor den har lagret den informasjonen du er ute etter.
                 </p>
             </div>
         </article>
@@ -49,6 +63,19 @@
                     Samsung er ett av verdens størte Mobil telefon produsenter. De produserer sine egne prosessorer som heter Exynos.
                 </p>
             </div>
+        </article>
+        <article>
+            <h1>Intel</h1>
+            <div>
+                <p>
+                    Amerikansk produsent av prosessorer og Skjermkort.
+                    <br> grunnlagt 1968 - laget intel 4004 CPU, 4 bits cpu.
+                    <br>Dagens CPUer er 64bit. 4bit gir 2^4 som største tall = 16
+                    <br> for 5-6 år siden var standard størrelse 32bit
+                    <br>dagens CPU kan jobbe med tall på 2^64 = 18446744073709551616L
+                </p>
+            </div>
+            <div><img src="https://ksassets.timeincuk.net/wp/uploads/sites/54/2018/10/Intel-9th-Gen-Core-2-e1539955555739.jpg" alt=""> </div>
         </article>
         <article>
             <h1></h1>

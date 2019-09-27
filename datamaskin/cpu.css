@@ -1,82 +1,116 @@
-    .firkant {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100px;
-        height: 100px;
-        text-align: center;
-    }
-    
-    #cpu {
-        background-color: bisque;
-        border: solid black 1px;
-        height: 500px;
-        width: 600px;
-        left: 400px;
-        top: 50px;
-        border-radius: 5%;
-    }
-    
-    #control {
-        border: solid black 1px;
-        left: 38%;
-        top: 5%;
-        width: 150px;
-        background-color: lightskyblue;
-    }
-    
-    #prosessor {
-        border: solid black 1px;
-        height: 300px;
-        width: 300px;
-        left: 25%;
-        top: 30%;
-        border-radius: 5%;
-        background-color: lightyellow;
-    }
-    
-    #registers {
-        border: solid black 1px;
-        left: 75px;
-        top: 30px;
-        width: 150px;
-        height: 90px;
-        background-color: lightskyblue;
-    }
-    
-    #alu {
-        border: solid black 1px;
-        left: 50px;
-        top: 150px;
-        width: 200px;
-        background-color: lightskyblue;
-    }
-    
-    #memory {
-        position: absolute;
-        border: solid black 1px;
-        left: 630px;
-        top: 600px;
-        width: 150px;
-        background-color: lightskyblue;
-    }
-    
-    #input {
-        position: absolute;
-        left: 5px;
-        border: solid black 1px;
-        left: 250px;
-        top: 360px;
-        width: 120px;
-        background-color: lightskyblue;
-    }
-    
-    #output {
-        position: absolute;
-        right: 5px;
-        border: solid black 1px;
-        left: 1035px;
-        top: 360px;
-        width: 120px;
-        background-color: lightskyblue;
-    }
+        .firkant {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+        
+        #cpu {
+            background-color: bisque;
+            border: solid black 1px;
+            height: 500px;
+            width: 600px;
+            left: 400px;
+            top: 50px;
+            border-radius: 5%;
+        }
+        
+        #control {
+            border: solid black 1px;
+            left: 38%;
+            top: 5%;
+            width: 150px;
+            background-color: lightskyblue;
+        }
+        
+        #prosessor {
+            border: solid black 1px;
+            height: 300px;
+            width: 300px;
+            left: 25%;
+            top: 30%;
+            border-radius: 5%;
+            background-color: lightyellow;
+        }
+        
+        #registers {
+            border: solid black 1px;
+            left: 75px;
+            top: 30px;
+            width: 150px;
+            height: 90px;
+            background-color: lightskyblue;
+        }
+        
+        #alu {
+            border: solid black 1px;
+            left: 50px;
+            top: 150px;
+            width: 200px;
+            background-color: lightskyblue;
+        }
+        
+        #memory {
+            position: absolute;
+            border: solid black 1px;
+            left: 630px;
+            top: 600px;
+            width: 150px;
+            background-color: lightskyblue;
+        }
+        
+        #input {
+            position: absolute;
+            left: 5px;
+            border: solid black 1px;
+            left: 250px;
+            top: 360px;
+            width: 120px;
+            background-color: lightskyblue;
+        }
+        
+        #output {
+            position: absolute;
+            right: 5px;
+            border: solid black 1px;
+            left: 1035px;
+            top: 360px;
+            width: 120px;
+            background-color: lightskyblue;
+        }
+        
+        .pil {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+        
+        div.pil:nth-child(1) {
+            left: 780px;
+            top: 100px;
+            width: 320px;
+            height: 260px;
+            border-top: solid 2px red;
+            border-right: solid 2px red;
+        }
+        
+        div.pil:nth-child(2) {
+            left: 300px;
+            top: 100px;
+            width: 330px;
+            height: 260px;
+            border-top: solid 2px red;
+            border-left: solid 2px red;
+        }
+        
+        div.pil:nth-child(3) {
+            left: 780px;
+            top: 130px;
+            width: 100px;
+            height: 500px;
+            border-right: solid 2px black;
+            border-top: solid 2px black;
+            border-bottom: solid 2px black;
+        }

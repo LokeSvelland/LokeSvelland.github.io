@@ -5,37 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="lightbulb.css">
+    <script src="lightbulb.js"></script>
     <title>Light bulb</title>
-    <style>
-        .topnav {
-            background-color: rgb(41, 40, 40);
-            overflow: hidden;
-        }
-        
-        .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        
-        .topnav a:hover {
-            background-color: blue
-        }
-        
-        .topnav a:active {
-            background-color: blue;
-            color: blue;
-        }
-        
-        body {
-            background-color: rgb(0, 0, 0);
-        }
-    </style>
 </head>
-
 <body>
 
     <div class="topnav">
@@ -49,22 +22,15 @@
         <a href="giffel.html">Animasjon</a>
     </div>
 
-    <script id="Light bulb">
-        function light(sw) {
-            var pic;
-            if (sw == 0) {
-                pic = "pic_bulboff.gif"
-            } else {
-                pic = "pic_bulbon.gif"
-            }
-            document.getElementById('myImage').src = pic;
-        }
-    </script>
     <img id="myImage" src="pic_bulboff.gif" width="200" height="320">
     <p>
         <button type="button" onclick="light(1)">light on</button>
         <button type="button" onclick="light (0)">light off</button>
+    </p>
 
+    <div id="everything" class="hidden" >
+      <img id="skjermbilde" src="skjermbilde.png" width="1300" height="400">
+    </div>
 </body>
 
 </html>

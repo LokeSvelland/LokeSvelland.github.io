@@ -8,10 +8,7 @@ function light(sw) {
         pic = "pic_bulbon.gif";
         document.getElementById('everything').classList.remove("hidden");
         document.body.style.backgroundColor = "gray";
-        //document.getElementById('skjermbilde').src = pic;
     }
     document.getElementById('myImage').src = pic;
    
 }
-
-//document.getElementById('skjermbilde').src = pic;

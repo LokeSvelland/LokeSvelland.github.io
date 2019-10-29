@@ -1,0 +1,25 @@
+body {
+    background-color: darkgray;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px;
+    color: hotpink
+}
+
+h3 {
+    text-align: center;
+
+}
+
+#grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bilder {
+    padding: 20px;
+ 
+}

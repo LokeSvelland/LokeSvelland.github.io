@@ -1,3 +1,17 @@
+--drop table bok, laaner, forfatter, eksemplar, utlaan CASCADE;
+
+create table forfatter 
+(
+forfatterid serial primary KEY,
+fornavn text not null,
+etternavn text not null,
+fodselsadato date,
+kjonn text check (
+    kjonn = 'm'
+    or kjonn = 'f'
+)
+);
+
 create table laaner
 (
 laanerid serial primary key,
@@ -9,39 +23,33 @@ epost text,
 kjonn text
 );
 
-create table utlaan
+create table bok
 (
-utlaanid serial primary key,
-utlaansdato date not null,
-innlevert text default 'nei',
-laanerid int,
-eksemplarid INT
+bokid serial primary KEY,
+tittel text not null,
+isbn text,
+antallsider int check (antallsider > 0),
+sjanger text,
+publisertdato date,
+spraak text,
+forfatterid INT REFERENCES forfatter (forfatterid)
 );
 
 create table eksemplar 
 (
 eksemplarid serial primary key,
 tillstand text,
-bokid INT
+bokid INT REFERENCES bok (bokid)
 );
 
-create table bok
+create table utlaan
 (
-bokid serial primary KEY,
-tittel text not null,
-isbn text,
-antallsider int,
-sjanger text,
-publisertdato date,
-spraak text,
-forfatterid INT
-);
-
-create table forfatter
-(
-forfatterid serial primary KEY,
-fornavn text not null,
-etternavn text not null,
-fodselsadato date,
-kjonn text
+utlaanid serial primary key,
+utlaansdato date not null,
+innlevert text default 'nei' check (
+    innlevert = 'ja'
+    or innlevert = 'nei'
+),
+laanerid int REFERENCES laaner (laanerid),
+eksemplarid INT REFERENCES eksemplar (eksemplarid)
 );

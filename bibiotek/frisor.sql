@@ -12,7 +12,7 @@ create table frisor(
 frisorid serial primary key,
 fornavn text not null,
 etternavn text not null,
-mobil text not null,
+mobil text,
 klippid int REFERENCES klipp (klippid)
 );
 

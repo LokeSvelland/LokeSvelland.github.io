@@ -18,7 +18,11 @@ app.use(bodyParser.json());
 
 // Define routes.
 app.get("/", function (req, res) {
-  res.send({ msg: "ok" });
+  res.send({ msg: "" });
+});
+
+app.get("/hei", function (req, res) {
+  res.send({ msg: "velkommen" });
 });
 
 app.post("/runsql", function (req, res) {

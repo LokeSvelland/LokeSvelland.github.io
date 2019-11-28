@@ -53,3 +53,11 @@ innlevert text default 'nei' check (
 laanerid int REFERENCES laaner (laanerid),
 eksemplarid INT REFERENCES eksemplar (eksemplarid)
 );
+
+
+
+select l.fornavn.f.fornavn = leo from laaner l
+inner join utlaan ut on (l.laanerid = ut.utlaanid)
+inner join eksemplar e on (ut.utlaanid = e.eksemplarid)
+inner join bok b on (e.eksemplarid = b.bokid)
+inner join forfatter f on (b.bokid = f.forfatterid);

@@ -21,7 +21,7 @@ klippid serial primary key,
 klipptime date not null,
 betalt text DEFAULT 'nei' check (
     betalt = 'ja'
-    or ikke-betalt = 'nei'
+    or betalt = 'nei'
 ),
 pris int DEFAULT = 1200,
 frisorid int REFERENCES frisor (frisorid),

@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 // Define routes.
 app.get("/", function (req, res) {
-  res.send({ msg: "" });
+  res.send({ msg: "ok" });
 });
 
 app.get("/hei", function (req, res) {

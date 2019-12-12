@@ -29,7 +29,7 @@
             id="table" 
             update="true"
             fields="fornavn,etternavn,tittel,innlevert" 
-            sql="select l.fornavn,l.etternavn,b.tittel,e.tillstand,u.innlevert 
+            sql="select l.fornavn,l.etternavn,b.tittel,e.tilstand,u.innlevert 
              from laaner l inner join utlaan u on (l.laanerid = u.laanerid) 
              inner join eksemplar e on (e.eksemplarid = u.eksemplarid) inner join bok b on (b.bokid=e.bokid)"
              >
@@ -38,7 +38,7 @@
 
         <!-- angi feltnavn du ønsker å bruke i fields=""  -->
         <db-insert id="form" 
-                fields="innlevert"
+                fields="innlevert:checkbox"
                 foreign="laaner.laanerid:fornavn" 
                 table="utlaan">
             <span slot="heading">Registrer Utlån</span>

@@ -38,6 +38,7 @@ forfatterid INT REFERENCES forfatter (forfatterid)
 create table eksemplar 
 (
 eksemplarid serial primary key,
+tittel text,
 tillstand text,
 bokid INT REFERENCES bok (bokid)
 );

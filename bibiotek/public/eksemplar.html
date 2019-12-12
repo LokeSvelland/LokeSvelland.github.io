@@ -17,7 +17,7 @@
     <!--Du kan lett legge til nye menyvalg
         Bare sørg for at du oppgir en data-link = htmlsida du vil koble til
     -->
-    <home-bar heading="Skolebibliotek Skeisvang" crumb="bok">
+    <home-bar heading="Skolebibliotek Skeisvang" crumb="eksemplar">
         <li data-link="forfatter">Registrer forfatter</li>
         <li data-link="bok">Registrer bok</li>
         <li data-link="laaner">Registrer låner</li>
@@ -30,16 +30,17 @@
         <!--angi feltnavn du ønsker å bruke i fields="" 
             viser en liste over lånere
         -->
-        <db-table id="table" fields="tittel,fornavn,antallsider" sql="select b.*,f.fornavn from bok b inner join forfatter f on (b.forfatterid = f.forfatterid)">
+        <db-table id="table" fields="tittel,fornavn,antallsider" 
+        sql="select b.*,f.fornavn from bok b inner join forfatter f on (b.forfatterid = f.forfatterid)">
             <span slot="caption">eksemplar</span>
         </db-table>
 
         <!-- angi feltnavn du ønsker å bruke i fields=""  -->
         <db-insert  id="form" 
-                    fields="tittel,tilstand" 
+                    fields="tilstand" 
                     foreign="forfatter.forfatterid:fornavn"
                     foreign="bok.bokid:tittel"
-                    table="bok">
+                    table="eksemplar">
             <span slot="heading">Registrer eksemplar</span>
         </db-insert>
 

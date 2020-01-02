@@ -1,0 +1,147 @@
+#brett {
+    border: solid gray 1px;
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.bondekvit {
+    position: relative;
+    top: 35px;
+    margin-left: 8px;
+    width: 45px;
+    height: 20px;
+    background-color: cornsilk;
+    box-shadow: 2px 2px 2px black;
+}
+
+.bondekvit:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: cornsilk;
+    width: 20px;
+    height: 10px;
+    top: -10px;
+    left: 12px;
+}
+
+.bondekvit:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: cornsilk;
+    width: 32px;
+    height: 32px;
+    top: -32px;
+    left: 6px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
+}
+
+.bondesvart {
+    position: relative;
+    top: 35px;
+    margin-left: 8px;
+    width: 45px;
+    height: 20px;
+    background-color: grey;
+    box-shadow: 2px 2px 2px black;
+}
+
+.bondesvart:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: grey;
+    width: 20px;
+    height: 10px;
+    top: -10px;
+    left: 12px;
+}
+
+.bondesvart:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: grey;
+    width: 32px;
+    height: 32px;
+    top: -32px;
+    left: 6px;
+    border-radius: 50%;
+
+}
+
+.rute {
+    width: 62px;
+    height: 62px;
+    border: solid grey 1px;
+    background-color: white;
+}
+
+#b15 {
+    background-color: black;
+}
+
+.rute:nth-child(odd) {
+    background-color: black;
+}
+
+.rute:nth-child(2n+9) {
+    background-color: white;
+}
+
+.rute:nth-child(2n+10) {
+    background-color: black;
+}
+
+.rute:nth-child(2n+16) {
+    background-color: white;
+}
+
+.rute:nth-child(2n+17) {
+    background-color: black;
+}
+
+.rute:nth-child(2n+25) {
+    background-color: white;
+}
+
+.rute:nth-child(2n+26) {
+    background-color: black;
+}
+
+.rute:nth-child(2n+33) {
+    background-color: black;
+}
+
+.rute:nth-child(2n+34) {
+    background-color: white;
+}
+
+.rute:nth-child(2n+41) {
+    background-color: white;
+}
+
+.rute:nth-child(2n+42) {
+    background-color: black;
+}
+
+.rute:nth-child(2n+49) {
+    background-color: black;
+}
+
+.rute:nth-child(2n+50) {
+    background-color: white;
+}
+
+.rute:nth-child(2n+57) {
+    background-color: white;
+}
+
+.rute:nth-child(2n+58) {
+    background-color: black;
+}

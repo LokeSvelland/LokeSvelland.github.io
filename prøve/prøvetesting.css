@@ -1,0 +1,32 @@
+#main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 500px
+}
+
+.joint {
+    border: solid 1px black;
+    width: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+.joint:nth-child(3n) {
+    transform:translate(60px);
+    color: blue;
+}
+
+.joint:nth-child(5){
+    transform:translate(20px);
+    color: red;
+}
+
+.joint:nth-child(7){
+    transform:translate(20px);
+    color: red;
+}
+
+.joint:nth-child(11){
+    transform:translate(20px);
+    color: red;
+}

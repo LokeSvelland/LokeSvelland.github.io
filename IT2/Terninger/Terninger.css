@@ -1,0 +1,29 @@
+#spill {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 600px;
+    width: 600px;
+    border: green solid 1px;
+}
+
+#forklaring {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: 650px;
+}
+
+#terning {
+    top: 200px;
+    height: 100px;
+    width: 100px;
+}
+
+.terning {
+    left: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}

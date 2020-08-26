@@ -1,0 +1,17 @@
+#liste {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 800px;}
+
+#liste > div {
+    border: solid rgb(0, 0, 0) 1px;
+    font-size: 1.5rem;
+    padding: 2px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    width: 800px;
+    color: blue;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elevliste.css">
+    <script src="elevliste.js"></script>
+    <title>Elevliste</title>
+</head>
+
+<body>
+    <div id="registrer">
+        <div>
+            <label>
+                Fornavn
+                <input type="text" id="fornavn">
+            </label>
+        </div>        <div>
+            <label>
+                Etternavn
+                <input type="text" id="etternavn">
+            </label>
+            <div>
+                <label>
+                    Adresse
+                    <input type="text" id="adresse">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Klasse
+                    <input type="text" id="klasse">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Kontaktlerer
+                    <input type="text" id="kontaktlerar">
+                </label>
+            </div>
+        </div>
+        <div>
+            <button id="lagre">
+                Lagre elev
+            </button>
+        </div>
+    </div>
+    <div id="elever"></div>
+        <div>
+        <div>
+            <label for="">
+                <input type="text" id="letefelt">
+            </label>
+        </div>
+        <div>
+            <button id="finn">
+                Søk etter elev
+            </button>
+        </div>
+    </div>
+    <div id="funnet"></div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

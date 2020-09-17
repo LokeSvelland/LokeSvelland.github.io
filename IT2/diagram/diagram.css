@@ -1,0 +1,23 @@
+#diagram {
+    width: 500px;
+    height: 400px;
+    background-color: aqua;
+}
+
+.soyle {
+    height: 16px;
+    background-color: blue;
+    border: solid gray 1px;
+    margin: 3px;
+}
+
+#talldata {
+    position: absolute;
+    left: 520px;
+    top: 80px;
+}
+
+#skjema {
+    position: absolute;
+    left: 520px;
+}

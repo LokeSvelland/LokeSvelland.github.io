@@ -1,0 +1,41 @@
+#main {
+    width: 600px;
+    height: 600px;
+    border: solid black 1px;
+}
+
+#board {
+position: absolute;
+top: 8px;
+left: 8px;
+height: 400px;
+width: 400px;
+border: solid grey 1px;
+}
+
+#info {
+    position: absolute;
+    top: 8px;
+    left: 458px;
+    height: 400px;
+    width: 150px;
+    border: solid blue 1px;
+}
+
+#minimap {
+    position: absolute;
+    top: 508px;
+    left: 458px;
+    height: 100px;
+    width: 150px;
+    border: solid green 1px;
+}
+
+#status {
+    position: absolute;
+    top: 508px;
+    left: 8px;
+    height: 100px;
+    width: 400px;
+    border: solid red 1px;
+}

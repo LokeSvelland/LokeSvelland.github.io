@@ -1,0 +1,72 @@
+:root {
+    --board:calc(12*32px);
+}
+
+#main {
+    width: 600px;
+    height: 600px;
+    border: solid black 1px;
+}
+
+#main > div {
+    border: solid blue 1px;
+}
+
+#board {
+position: absolute;
+top: 8px;
+left: 8px;
+width:var(--board);
+height: var(--board);
+display: grid;
+grid-template-columns: repeat(12,1fr);
+}
+
+#actors {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width:var(--board);
+    height: var(--board);
+}
+
+#avatar {
+    position: absolute;
+    width:32px;
+    height:32px;
+    background-image: url("../images/TransRidder.png");
+    left: calc(32px * 5);
+    top: calc(32px * 5);
+}
+
+#board > div {
+    width:32px;
+    height:32px;
+    background-image: url("../images/tiles32.png");
+    background-position-x: calc(-32px * 0);
+    background-position-y: calc(-32px * 3);
+}
+
+#info {
+    position: absolute;
+    top: 8px;
+    left: 458px;
+    height: 400px;
+    width: 150px;
+}
+
+#minimap {
+    position: absolute;
+    top: 458px;
+    left: 458px;
+    height: 150px;
+    width: 150px;
+}
+
+#status {
+    position: absolute;
+    top: 458px;
+    left: 8px;
+    height: 150px;
+    width: var(--board);
+}

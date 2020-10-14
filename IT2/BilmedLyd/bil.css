@@ -1,0 +1,19 @@
+#bil {
+    position: absolute;
+    left: -200px;
+    top: 200px;
+    background-image: url("Media/leftside-car-300x95.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 100px;
+}
+
+#bil.aktiv {
+    animation: drive 2s;
+}
+
+@keyframes drive {
+    100% {left: calc(100% + 60px);}
+}

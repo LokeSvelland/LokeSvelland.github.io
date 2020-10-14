@@ -1,0 +1,55 @@
+#main {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: solid green 1px;
+}
+
+#ball {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: red;
+    animation: sprett 2s linear alternate infinite;
+}
+
+@keyframes sprett {
+    0% {left: 50px; top: 450px;}
+    5% {left: 70px; top: 405px;}
+    10% {left: 90px; top: 360px;}
+    15% {left: 110px; top: 315px;}
+    20% {left: 130px; top: 270px;}
+    25% {left: 150px; top: 225px;}
+    30% {left: 170px; top: 270px;}
+    35% {left: 190px; top: 315px;}
+    40% {left: 210px; top: 360px;}
+    45% {left: 230px; top: 405px;}
+    50% {left: 250px; top: 450px;}
+    55% {left: 270px; top: 405px;}
+    60% {left: 290px; top: 360px;}
+    65% {left: 310px; top: 315px;}
+    70% {left: 330px; top: 270px;}
+    75% {left: 350px; top: 225px;}
+    80% {left: 370px; top: 270px;}
+    85% {left: 390px; top: 315px;}
+    90% {left: 410px; top: 360px;}
+    95% {left: 430px; top: 405px;}
+    100% {left: 450px; top: 450px;}
+}
+
+#propell {
+    position: absolute;
+    left: 250px;
+    top: 250px;
+    height: 1rem;
+    width: 1rem;
+    transform: rotate(0);
+    animation: roter linear infinite 2s;
+}
+
+@keyframes roter {
+    100% {transform: rotate(1turn);}
+}

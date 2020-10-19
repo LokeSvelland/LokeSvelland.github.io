@@ -1,0 +1,39 @@
+#car1 {
+    position: absolute;
+    left: -200px;
+    top: 200px;
+    background-image: url("../Media/leftside-car-300x95.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 100px;
+}
+
+#car2 {
+    position: absolute;
+    right: -200px;
+    top: 200px;
+    background-image: url("../Media/rightside.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 100px;
+}
+
+#car1.aktiv {
+    animation: drive1 2s;
+}
+
+#car2.aktiv {
+    animation: drive2 2s;
+}
+
+@keyframes drive1 {
+    100% {left: calc(100% + 60px);}
+}
+
+@keyframes drive2 {
+    100% {right: calc(100% + 60px);}
+}

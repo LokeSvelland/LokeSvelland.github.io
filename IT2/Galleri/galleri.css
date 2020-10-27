@@ -1,0 +1,25 @@
+#bilder {
+    position: relative;
+}
+
+#bilder > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("Media/b1.jpg");
+    width: 200px;
+    height: 150px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bilder > div:nth-last-of-type(1) {
+    animation: centerstage 6s linear;
+}
+
+@keyframes centerstage {
+    33% {left: 500px; top: 200px}
+    66% {left: 500px; top: 200px; transform: scale(2);}
+    100% {left: 0px; top: 0px}
+}

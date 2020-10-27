@@ -1,0 +1,45 @@
+body {
+    top: 10px;
+    left: 10px;
+    width: 1100px;
+    height: 600px;
+}
+
+#himmel {
+    position: absolute;
+    background-color: skyblue;
+    width: 1100px;
+    height: 600px;
+}
+
+#bakke {
+    position: absolute;
+    background-color: darkolivegreen;
+    width: 1100px;
+    height: 200px;
+    bottom: 20px;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#planter {
+
+}
+
+#bre {
+    background-color: whitesmoke;
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    bottom: 20px;
+    animation: skli 15s linear;
+}
+
+@keyframes skli {
+    0% {left: 0px; bottom: 20px;}
+    100% {width: 400px;}
+}

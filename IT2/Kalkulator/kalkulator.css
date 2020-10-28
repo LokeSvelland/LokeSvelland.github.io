@@ -1,0 +1,84 @@
+#calc {
+    position: relative;
+    border: solid gray 1px;
+    width: 300px;
+    height: 400px;
+}
+
+#display {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    border: solid 1px green;
+    width: 250px;
+    height: 70px;
+    background-color: whitesmoke;
+    text-align: right;
+    font-size: 2.5rem;
+}
+
+#ac {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 23px;
+    top: 90px;
+    line-height: 2.2rem;
+}
+
+#erlik {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    right: 23px;
+    bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#tall {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 150px;
+    height: 150px;
+    left: 25px;
+    bottom: 10px;
+}
+
+#funk {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    left: 23px;
+    top: 90px;
+}
+
+#operator {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90px;
+    height: 100px;
+    right: 23px;
+    top: 160px;
+}
+
+.button {
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    user-select: none;
+    background-color: lightgrey;
+    line-height: 2.2rem;
+    width: 30px;
+    height: 30px;
+}
+.button:hover {
+    background-color: coral;
+    color: white;
+}
+.button:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}

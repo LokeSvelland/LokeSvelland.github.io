@@ -10,7 +10,7 @@ function setup() {
     function beregnVansker() {
         // @ts-ignore
         divS.className = "soyle";
-        const vekt = inpVekt.valueAsNumber;
+        const vekt = inpVekt.value;
         if (vekt < 0 || vekt > 250) {
             alert("Skriv en rimelig vekt!");
             return;

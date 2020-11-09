@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="farge.css">
+    <script src="farge.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <input id="skriv" placeholder="Skriv farge her" type="text">
+        <button id="velg">Vis Farge</button>
+        <div id="farge"></div>
+        <div id="registrer"></div>
+        <br>
+        <br>
+        <input id="navn" placeholder="navn" type="text">
+        <input id="hex" placeholder="Hex" type="text">
+        <button id="registrer">registrer</button>
+    </div>
+
+
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
+
+CSS 
+#main {
+    position: relative;
+    border: salmon 1px solid;
+    width: 500px;
+    height: 500px;
+}
+
+JavaScript 
+// @ts-check
+const $ = (id) => document.getElementById(id);
+
+function setup() {
+    const divMain = $("main");
+    const divFarge = $("farge");
+    const inpSkriv = $("skriv");
+    const btnVelg = $("velg");
+    btnVelg.addEventListener("click", finnFarge);
+
+    //Finner fargen som du søker etter
+    function finnFarge() {
+        const valg = inpSkriv.value;
+        if (valg === "rød") {
+            divFarge.innerHTML = "Du valgte fargen rød - den har koden #FF0000";
+            divMain.style.backgroundColor = "red";
+        } else if (valg === "blå") {
+            divFarge.innerHTML = "Du valgte fargen blå - den har koden #0000FF";
+            divMain.style.backgroundColor = "blue";
+        } else if (valg === "grønn") {
+            divFarge.innerHTML = "Du valgte fargen grønn - den har koden #00FF00";
+            divMain.style.backgroundColor = "green";
+        } else if (valg === "gul") {
+            divFarge.innerHTML = "Du valgte fargen gul - den har koden #FFFF00";
+            divMain.style.backgroundColor = "yellow";
+        }
+
+    }
+
+}

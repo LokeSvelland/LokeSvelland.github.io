@@ -1,4 +1,4 @@
-//@ts-check
+// @ts-check
 
 function setup() {
     const lydfil = document.getElementById("carsound");
@@ -7,8 +7,9 @@ function setup() {
     btnSpill.addEventListener("click", playSound);
 
     function playSound() {
-    lydfil.play();
-    divBil.classList.add("aktiv");
+        divBil.classList.remove("aktiv");
+        void divBil.offsetWidth;
+        lydfil.play();
+        divBil.classList.add("aktiv");
     }
-
 }

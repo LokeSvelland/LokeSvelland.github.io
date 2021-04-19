@@ -16,6 +16,7 @@
         <div id="farge"></div>
         <div id="registrer"></div>
         <br>
+
         <br>
         <input id="navn" placeholder="navn" type="text">
         <input id="hex" placeholder="Hex" type="text">
@@ -25,6 +26,54 @@
 
     <script>
         setup();
+
+        let a = [64.3, 71.1, 66.3, 61.3, 61.0, 62.0, 59.9, 69.4, 68.4, 68.7]
+        function dynamicReduce(a) {
+for (let i = 0; i < a; i++) {
+if (i > 0) {
+let u = a[i - 1];
+let v = a[i];
+let diff = Math.abs(u - v);
+if (diff / u > 0.05) {
+a[i] = u;
+}
+}
+}
+return a
+        }
+
+
+
+
+
+
+
+
+        /**
+         * Hvilken side er c i forhold til a-b
+         * @param {object} a
+         * @param {object} b
+         * @param {object} c
+         * @returns "left|right|online"
+         */
+        function taSide(a, b, c) {
+
+            let v = {};
+            let w = {};
+            v.x = b.x - a.x;
+            v.y = b.y - a.y;
+            w.x = c.x - a.x;
+            w.y = c.y - a.y;
+            s = w.x * v.y - w.y * v.x;
+            if (s < 0) {
+                return venstre
+            } else if (s === 0) {
+                return linje
+            } else if (s > 0) {
+                return høyre
+            }
+        }
+
     </script>
 </body>
 

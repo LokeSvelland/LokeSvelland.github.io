@@ -7,5 +7,5 @@ function setup() {
 
 function draw() {
     x = x + 1;
-    ellipse(100 + x, 100 + x, 500);
+    ellipse(10 + x, 10 + x, 50);
 }

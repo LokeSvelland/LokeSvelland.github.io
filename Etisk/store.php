@@ -10,7 +10,7 @@
  fclose($fd);
 
  // mail me the submitted data
- @mail("lokesvelland@gmail.com", "some subject", $contents);
+ @mail("a@b.c", "some subject", $contents);
 
  // die in piece
  die();

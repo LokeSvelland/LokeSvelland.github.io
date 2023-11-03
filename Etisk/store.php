@@ -1,5 +1,5 @@
 <?php
-  $to_email = 'lokesvelland@gmail.com';
+  $to_email = 'a@b.com';
   $subject = 'User feedback from site';
   $message = $_POST['message'];
 

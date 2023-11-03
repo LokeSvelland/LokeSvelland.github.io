@@ -1,17 +1,12 @@
 <?php
- foreach($_POST as $name=>$value)
- {
-    $contents .= "$name = $value" . "\n";
- }
+  $to_email = 'lokesvelland@gmail.com';
+  $subject = 'User feedback from site';
+  $message = $_POST['message'];
 
- // save locally in cache folder
- $fd = fopen("cache/filename.txt", "w");
- fwrite($fd, $contents);
- fclose($fd);
+  // this may need configuring depending on your host. If you find the email isn't
+  // being sent, look up the error you're receiving or post another question here on
+  // SO.
+  mail($to_email, $subject, $message);
 
- // mail me the submitted data
- @mail("a@b.c", "some subject", $contents);
-
- // die in piece
- die();
+  header('Location: /');
 ?>
